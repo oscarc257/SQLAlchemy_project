@@ -1,0 +1,8 @@
+blinker
+Click
+Flask
+Flask-DebugToolbar
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeugss
