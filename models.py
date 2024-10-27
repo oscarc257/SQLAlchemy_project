@@ -69,11 +69,11 @@ class Tag(db.Model):
         backref="tags",
     )    
     
-    def connect_db(app):
-        """Connect this database to provided Flask app.
-        You would call this in Flask app.
-        """
-    
-           
+def connect_db(app):
+    """Connect this database to provided Flask app.
+    You would call this in Flask app.
+        """   
+    with app.app_context():    
         db.app = app
         db.init_app(app)
+        
